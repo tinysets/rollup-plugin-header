@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-header",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Rollup plugin to append content before or after js bundle",
   "main": "dist/index.js",
   "files": [

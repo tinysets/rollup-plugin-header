@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.header = void 0;
 function header(options) {
     if (options === void 0) { options = {}; }
     options.header = options.header ? options.header.toString() : '';
@@ -11,4 +12,4 @@ function header(options) {
         }
     };
 }
-exports.default = header;
+exports.header = header;

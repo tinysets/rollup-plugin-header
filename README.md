@@ -28,7 +28,7 @@ export default {
 Input:
 
 ```
-header({header:'header' , footer:'footer'})
+header({header:'someheader' , footer:'somefooter'})
 ```
 
 Output:
