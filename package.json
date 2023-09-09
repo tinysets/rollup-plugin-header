@@ -1,12 +1,17 @@
 {
   "name": "rollup-plugin-header",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Rollup plugin to append content before or after js bundle",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
   "scripts": {},
+  "homepage": "https://github.com/tinysets/rollup-plugin-header",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinysets/rollup-plugin-header.git"
+  },
   "keywords": [
     "rollup",
     "rollup-plugin",
