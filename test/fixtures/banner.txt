@@ -1,4 +1,0 @@
-index.js by <%= pkg.author %>
-
-second line
-third line

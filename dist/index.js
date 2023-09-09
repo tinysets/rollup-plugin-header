@@ -1,21 +1,14 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = banner;
-
-var _banner = _interopRequireDefault(require("./banner"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function banner() {
-  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var plugin = new _banner.default(options);
-  return {
-    name: 'banner',
-    renderChunk: function renderChunk(code) {
-      return plugin.prependBanner(code);
-    }
-  };
+Object.defineProperty(exports, "__esModule", { value: true });
+function header(options) {
+    if (options === void 0) { options = {}; }
+    options.header = options.header ? options.header.toString() : '';
+    options.footer = options.footer ? options.footer.toString() : '';
+    return {
+        name: 'header',
+        renderChunk: function (code) {
+            return options.header + code + options.footer;
+        }
+    };
 }
+exports.default = header;
